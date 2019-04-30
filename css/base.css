@@ -23,6 +23,11 @@ a:hover{
     
     color:#c81623;
 }
+img{
+    display: block;
+    /* 解决图片底部有空白问题 */
+    /* vertical-align: top; */
+}
 header{
 height: 80px;
 background: #020000;
