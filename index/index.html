@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="type/css" rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+   <style>
+body{
+    background: #fef5ff;
+}
+ul{
+    list-style: none;
+}
+ul,h1,p,input,button{
+    padding: 0;
+    margin: 0;
+}
+input,button{
+    border: 0;
+    /* //取消轮廓边框 */
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color:#aaa;
+}
+a:hover{
+    
+    color:#c81623;
+}
+header{
+height: 80px;
+background: #020000;
+
+}
+.w{
+width: 100%;
+margin: 0 auto;
+}
+.fl{
+float: left;
+}
+.fr{
+float: right;
+margin-right: 20px;
+}
+.f10{
+color: #f10215 !important;
+}
+/* 声明字体 */
+@font-face {
+font-family: 'icomoon';
+src:  url('../fonts/icomoon.eot?yngnmz');
+src:  url('../fonts/icomoon.eot?yngnmz#iefix') format('embedded-opentype'),
+url('../fonts/icomoon.ttf?yngnmz') format('truetype'),
+url('../fonts/icomoon.woff?yngnmz') format('woff'),
+url('../fonts/icomoon.svg?yngnmz#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+.shortcut i{
+    font-family: 'icomoon';
+    font-style: normal;
+    color: #ccc;
+}
+/* 快速导航栏 */
+.shortcut{
+height: 30px;
+line-height: 30px;
+background-color: #e3e4e5;
+border-bottom: 1px solid #dddddd;
+font-size: 12px;
+color:#aaa;
+}
+.city{
+margin-left: 200px;
+}
+/* 快速导航栏 */
+.shortcut li{
+float: left;
+}
+/* 分割线 */
+.space{
+width: 1px;
+height: 10px;
+background-color: #aaa;
+margin: 10px 12px;
+}
+.mobile{
+    position: relative;
+}
+.mobile img{
+    position: absolute;
+    left: -12px;
+    top: 24px;
+border: 1px solid #ccc;
+padding: 3px;
+width: 60px;
+height: 60px;
+
+
+}
+.middle{
+    height: 140px;
+ 
+    position: relative;
+   
+}
+.logo{
+    position: absolute;
+    left: 0;
+    top: -30px;
+    box-shadow: 0 -10px 10px rgba(0,0,0,.3);
+    margin-left: 50px;
+}
+.logo a{
+    display: block;
+    background: url(./images/logo.png) no-repeat;
+    width: 140px;
+    height: 170px;
+    background-size: 100% 100%;
+    background-color:#ccc;
+}
+/* 搜索栏 */
+.form{
+    width: 550px;
+    height: 35px;
+    background-color: pink;
+    top: 25px;
+    left: 320px;
+    position: absolute;
+    
+   }
+.form input{
+    width: 498px;
+    height: 33px;
+    background-color: skyblue;
+    border: 1px solid #f10215;
+    float: left;
+    font-size: 14px;
+}
+.form button{
+    width: 50px;
+    height:35px ;
+    background-color: #f10215;
+    float: left;
+}
+.form button i{
+    font-family: 'icomoon';
+    font-style: normal;
+    color: #ccc;
+}
+.shopCar{
+    width: 188px;
+    height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 25px;
+    right: 95px;
+    background-color: #ffffff;
+    line-height: 33px;
+    text-align: center;
+    color: #f10215;
+    
+}
+.shopCar i{
+    font-family: 'icomoon';
+    margin-right: 5px;
+    font-style: normal;
+
+}
+.shopCar span{
+    width: 15px;
+    height: 15px;
+    background-color: #f10215;
+    border-radius: 50%;
+    /* 加了绝对定位，固定定位，浮动定位的行内元素，可以不用转换，直接给宽度和高度 */
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    font-size: 12px;
+    color: #aaa;
+    line-height: 15px;
+}
+/* 关键字 */
+.hotwords{
+    width: 550px;
+    height: 35px;
+   font-size: 14px;
+    top:60px;
+    left: 320px;
+    position: absolute;
+    
+   }
+   /* 小导航模板 */
+   .navitems{
+    width: 770px;
+    height: 40px;
+   
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    line-height: 40px;
+   }
+   .navitems li{
+    float: left;
+    margin-left: 30px;
+   }
+   .navitems li a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+   }
+   .navitems li a:hover{
+     color:#f10215;
+   }
+   .navitems .space{
+       margin-top: 15px;
+        margin-left: 15px;
+        margin-right: -15px;
+   }
+   /* 超级日 */
+   .super{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+
+   }
+   /* 页面底部 */
+   footer{
+       height: 500px;
+       background-color: #eaeaea;
+       margin-top: 35px;
+
+   }
+   .service{
+       border-bottom: 1px solid #dedede;
+       padding: 30px 0;
+       overflow: hidden;
+   }
+   .service ul li{
+    width: 297px;
+    height: 43px;
+   float: left;
+    line-height: 43px;
+    position: relative;
+   }
+   .service  li p{
+       font-weight: 700;
+        margin-left: 80px;
+   }
+   .service li h5{
+    position: absolute;
+    top: -20px;
+    left: 38px;
+    width: 36px;
+    height: 43px;
+   }
+   .service li:nth-child(2) h5{
+       background-position: 0 -43px;
+   }
+   .service li:nth-child(3) h5{
+       background-position: 0 -86px;
+   }
+   .service li:nth-child(4) h5{
+       background-position: bottom ;
+   }
+   .help{
+       height: 200px;
+       border-bottom: 1px solid #dedede;
+       padding-top: 25px;
+       box-sizing: border-box;
+   }
+   .help dl{
+       width: 192px;
+        float: left;
+   }
+   .help dt{
+    height: 30px;
+   }
+   .help dd{
+    height: 22px;
+   }
+    </style>
+    <header></header>
+    <div class="header">
+        <div class="shortcut"> 
+         <div class="w">
+        <ul class="fl city">
+             <li><i class="f10"></i><a href="#">北京</a></li>
+           
+        </ul>
+   
+        <ul class="fr">
+            <li><a href="#">你好,请登录</a><a href="#" class="f10">免费注册</a></li>
+            <li class="space"></li>
+            <li><a href="#">我的订单</a></li>
+            <li class="space"></li>
+            <li><a href="#">我的京东</a><i></i></li>
+            <li class="space"></li>
+            <li><a href="#">京东会员</a></li>
+            <li class="space"></li>
+            <li><a href="#">企业采购</a></li>
+            <li class="space"></li>
+            <li><a href="#">客户服务</a><i></i></li>
+            <li class="space"></li>
+            <li><a href="#">网站导航</a><i></i></li>
+            <li class="space"></li>
+            <li><a href="#" class="mobile">手机京东 <img src="./images/mobile.png"  alt=""></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <!-- 中间头部分 -->
+    <div class="w middle">
+        <div class="logo">
+            <h1>
+                <!-- 提高权重 便利于搜索引擎优化 -->
+                <a href="#"></a>
+            </h1>
+        </div>
+        <!-- 搜索 -->
+        <div class="form">
+            <input type="text" placeholder="扫描仪">
+            <button><i></i></button>
+        </div>
+        <!-- 购物车 -->
+        <div class="shopCar">
+            <i></i><a href="#" class="f10">我的购物车</a><span>0</span>
+        </div>
+        <!-- 关键字 -->
+        <div class="hotwords">
+            <a href="#" class="f10">199减100</a>
+            <a href="#">鼠标使用</a>
+            <a href="#">农资7折</a>
+            <a href="#">低至29元</a>
+            <a href="#">抽奖赢空调</a>
+            <a href="#">记忆棉</a>
+            <a href="#">坐垫</a>
+            <a href="#">1分钱买油</a>
+            <a href="#">智能手表</a>
+        </div>
+        <!-- 小导航部分 -->
+        <div class="navitems">
+            <ul>
+                <li><a href="#">秒杀</a></li>
+                <li><a href="#">优惠券</a></li>
+                <li><a href="#">闪购</a></li>
+                <li><a href="#">拍卖</a></li>
+                <li class="space"></li>
+                <li><a href="#">服装城</a></li>
+                <li><a href="#">京东超市</a></li>
+                <li><a href="#">生鲜</a></li>
+                <li><a href="#">全球购</a></li>
+                <li class="space"></li>
+                <li><a href="#">京东金融</a></li>
+            </ul>
+        </div>
+        <!-- 超级日部分 -->
+        <div class="super">
+        <a href="#"><img src="../index/images/phone.png" height="40" width="190" ></a>
+        </div>
+    </div>
+    <!-- 页面底部分 start-->
+    <footer>
+        <div class="service">
+            <div class="w">
+                <ul>
+                    <li>
+                        <h5>多</h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li>
+                        <h5>多</h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li>
+                        <h5>多</h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li>
+                        <h5>多</h5>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 帮助模块 -->
+        <div class="w help">
+            <div class="fl">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">购物流程</a></dd>
+                </dl>
+            </div>
+            <div class="fr">
+                
+            </div>
+        </div>
+    </footer>
+    <!-- 页面底部分 end -->
+</body>
+</html>
