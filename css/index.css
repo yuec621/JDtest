@@ -56,4 +56,40 @@
     float: right;
     margin-top: 10px;
    }
-  
+   /* 箭头部分 */
+   .grid-col2-t{
+       position: relative;
+   }
+   .arrow-l,.arrow-r{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    top:50%;
+    background-color: rgba(0, 0,0,0.3);
+    transform: translateY(-50%);
+    line-height: 60px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Arial;
+    font-weight: normal;
+   }
+   .arrow-r{
+       right: 0;
+   }
+   .circle{
+       width: 175px;
+       height:20px ;
+       background: rgba(0, 0,0,0.3);
+       position: absolute;
+       left: 50px;
+       transform: translateX(-50%);
+   }
+  .circle li{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      line-height: 12px;
+      float: left;
+      margin: 0 4px;
+  }
