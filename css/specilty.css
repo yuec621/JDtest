@@ -35,7 +35,7 @@
    .grid-col2{
     width: 790px;
     height: 100%;
-    background-color:rebeccapurple;
+    /* background-color:rebeccapurple; */
     margin-left: 10px;
    }
    
@@ -77,7 +77,7 @@
    .circle{
        width: 165px;
        height:20px ;
-       background: rgba(0, 0,0,0.3);
+       /* background: rgba(0, 0,0,0.3); */
        position: absolute;
        left: 50%;
        transform: translateX(-50%);
@@ -109,13 +109,107 @@
       height: 115px;
       border-bottom: 1px solid #ccc;
       background-color: pink;
+
   }
+.login-b{
+   padding-left: 10px;
+
+}
+.login-b a{
+    display: block;
+    width:70px;
+    height: 30px; 
+    border: 1.5px solid #f10215;
+    color: #f10215;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.login-b a:hover{
+    background-color: #f10215;
+    color: white;
+}
+
+  .login-t{
+      width: 95px;
+      height: 60px;
+      line-height: 20px;
+      font-size: 12px;
+      /* 强制一行内显示 */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #9c9698;
+      padding-left: 60px;
+      position: relative;
+  }
+  .login-t a{
+      color: #666;
+
+  }
+  .login-t a:hover {
+    color: #f10215;
+  }
+
   .news{
       height: 155px;
       border-bottom: 1px solid #ccc;
       background-color: purple;
+      padding: 7px 13px 0;
+      box-sizing: border-box;
+
+  }
+  .news-t{
+      height: 19px;
+      position: relative;
+      border-bottom: 1px solid #ccc;
+
+  }
+  .news-t a{
+      float: left;
+      height: 17px;
+      line-height: 17px;
+  }
+  .cuxiao{
+      widows: 38px;
+      padding-right: 10px;
+      border-right: 1px solid #ccc;
+     
+  }
+  .gg{
+      margin-left: 15px;
+  }
+ .news-t .more{
+      float: right;
+  }
+  .news-t div{
+      height: 2px;
+      width: 32px;
+      background-color: #f10215;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+  }
+  .news-b{
+      padding-top: 20px;
+  }
+  .news-b li{
+      margin-top: 4px;
   }
   .expand{
       height: 209px;
       background-color: skyblue;
+  }
+  .user-info{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top:0;
+
+  }
+  .user-info img{
+      width: 100%;
+      border-radius: 50%;
   }
