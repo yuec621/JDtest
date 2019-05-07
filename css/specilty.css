@@ -38,11 +38,7 @@
     background-color:rebeccapurple;
     margin-left: 10px;
    }
-   .grid-col3{
-    width: 190px;
-    height: 100%;
-    background-color:rebeccapurple;
-   }
+   
    .grid-col2-t img{
     border: 1px solid greenyellow;
    }
@@ -97,5 +93,29 @@
       line-height: 12px;
       float: left;
       margin: 0 4px;
-
+      /* 鼠标经过变小手 */
+        cursor: pointer;
+  }
+  .circle .current{
+      background-color: #f10215;
+  }
+  /* 右边模块 */
+  .grid-col3{
+    width: 190px;
+    height: 100%;
+   
+   }
+  .login{
+      height: 115px;
+      border-bottom: 1px solid #ccc;
+      background-color: pink;
+  }
+  .news{
+      height: 155px;
+      border-bottom: 1px solid #ccc;
+      background-color: purple;
+  }
+  .expand{
+      height: 209px;
+      background-color: skyblue;
   }
