@@ -1,4 +1,4 @@
-/* 中间分类模块 */
+/* 中间分类模块 ---首页*/
 .grid{
     height: 480px;
     position: relative;
@@ -59,6 +59,7 @@
    /* 箭头部分 */
    .grid-col2-t{
        position: relative;
+     
    }
    .arrow-l,.arrow-r{
     position: absolute;
@@ -72,17 +73,21 @@
     color: #ffffff;
     font-family: Arial;
     font-weight: normal;
+    text-align: center;
    }
    .arrow-r{
        right: 0;
    }
    .circle{
-       width: 175px;
+       width: 165px;
        height:20px ;
        background: rgba(0, 0,0,0.3);
        position: absolute;
-       left: 50px;
+       left: 50%;
        transform: translateX(-50%);
+        bottom: 20px;
+        border-radius: 10%;
+        padding-left: 6px;
    }
   .circle li{
       width: 12px;
@@ -92,4 +97,5 @@
       line-height: 12px;
       float: left;
       margin: 0 4px;
+
   }
